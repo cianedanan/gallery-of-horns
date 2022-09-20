@@ -1,7 +1,7 @@
 import React from 'react';
 import HornedBeast from './HornedBeast.js'
-import weedle from './Weedle.png'
-import rapidash from './Rapidash.png'
+import weedle from '../Weedle.png'
+import rapidash from '../Rapidash.png'
 
 class Main extends React.Component {
 	render(){
