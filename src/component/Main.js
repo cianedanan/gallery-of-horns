@@ -1,19 +1,23 @@
 import React from 'react';
 import HornedBeast from './HornedBeast.js'
-import weedle from '../Weedle.png'
-import rapidash from '../Rapidash.png'
+import data from '../assets/data.json';
+
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+
 
 class Main extends React.Component {
+
 	render(){
 		return(
 			<>
-				<div>
-					<HornedBeast title={'Weedle'} src={weedle} alt={'an image of weedle'} p={'A wild Weedle appeared!'}/>
-					<p></p>
-				</div>
-				<div>
-					<HornedBeast title={'Rapidash'}  src={rapidash} alt={'an image of rapidash'} p={'A wild Rapidash appeared!'}/>
-				</div>
+			<Container>
+				<Row>
+					{data.map((beast) => {
+						return <HornedBeast id={beast._id} title={beast.title} src={beast.image_url} description={beast.description} keyword={beast.keyword} horns={beast.horns}/> 
+					})}
+				</Row>
+			</Container>
 			</>
 		)
 	}
