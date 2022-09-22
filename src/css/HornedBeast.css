@@ -1,0 +1,16 @@
+
+
+
+div.card-title.h5{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	font-size: 20pt;
+}
+
+div.container.card{
+	margin: 8px;
+	box-shadow: 2px 2px 2px rgba( 0, 0, 0, .128);
+	border: solid rgb(255, 230, 0) 8px ;
+	background: rgb(73, 77, 76);
+	color: white;
+}

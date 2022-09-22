@@ -1,4 +1,4 @@
-Number and name of feature: Feature #1: Display images
+## Number and name of feature: Feature #1: Display images
 
 Estimate of time needed to complete: 2 hours
 
@@ -8,8 +8,9 @@ Finish time: 4:31
 
 Actual time needed to complete: 1 hour and ten minutes
 
+<br>
 
-Number and name of feature: Allow users to vote for their favorite beast
+## Number and name of feature: Allow users to vote for their favorite beast
 
 Estimate of time needed to complete: 2 hours
 
@@ -19,8 +20,9 @@ Finish time: 6:15
 
 Actual time needed to complete: 2 hours 15 minutes
 
+<br>
 
-Number and name of feature: Feature 3: Bootstrap
+## Number and name of feature: Feature 3: Bootstrap
 
 Estimate of time needed to complete: 1 hour
 
@@ -29,3 +31,17 @@ Start time: 6:31
 Finish time: 7:30
 
 Actual time needed to complete: 59 minutes
+
+<br>
+
+## Number and name of feature: Feature #1: Display a Modal
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 2:38
+
+Finish time: 6:10
+
+Actual time needed to complete: 3 hours and 22 minutes
+
+<br>
