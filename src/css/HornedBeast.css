@@ -1,16 +1,60 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 div.card-title.h5{
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-family: Heebo;
 	font-weight: bold;
-	font-size: 20pt;
+	font-size: 12pt;
+	color: rgb(25, 25, 25);
+	text-align: center;
+	margin-top: 12px;
 }
 
 div.container.card{
 	margin: 8px;
-	box-shadow: 2px 2px 2px rgba( 0, 0, 0, .128);
-	border: solid rgb(255, 230, 0) 8px ;
-	background: rgb(73, 77, 76);
-	color: white;
+	background-color: white;
+	color: #9ec35d;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: Heebo;
+}
+
+div.container.card:hover{
+	box-shadow: 5px 5px 5px rgba( 0, 0, 0, .2);
+}
+
+img.card-img-top:hover{
+	cursor: pointer;
+}
+
+button.btn.btn-primary{
+	--bs-btn-color: #fff;
+	--bs-btn-bg: green;
+	--bs-btn-border-color: green;
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: #025c02;
+	--bs-btn-hover-border-color: green;
+	--bs-btn-focus-shadow-rgb: 49,132,253;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: #025c02;
+	--bs-btn-active-border-color: #025c02;
+	--bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: #fff;
+	--bs-btn-disabled-bg: green;
+	--bs-btn-disabled-border-color: green;
+	font-family: Heebo;
+	font-weight: bold;
+}
+
+.love-counter{
+	width: 19px;
+	color: rgb(177, 176, 176);
+	cursor: pointer;
+}
+
+.heart{
+	cursor: pointer;
+	margin: 0;
 }

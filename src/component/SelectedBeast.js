@@ -1,6 +1,6 @@
 import React from 'react';
+import '../css/SelectedBeast.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Card from 'react-bootstrap/Card';
 

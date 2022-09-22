@@ -10,17 +10,17 @@ class HornedBeast extends React.Component {
     super(props);
     this.state = {
       hearts: [],
-      likes: 0,
+      loves: 0,
     };
   }
 
   handleClick = () => {
     this.setState({ hearts: this.state.hearts + '❤️' });
-    this.setState({ likes: this.state.likes + 1 });
+    this.setState({ loves: this.state.loves + 1 });
   };
 
   dislikeClick = () => {
-    this.setState({ likes: this.state.likes - 1 });
+    this.setState({ loves: this.state.loves - 1 });
   };
 
   render() {
@@ -47,9 +47,17 @@ class HornedBeast extends React.Component {
               }}
             >
               <Button variant='primary' onClick={this.handleClick}>
-                Like
+                Love
               </Button>
-              <Card.Text>❤️{this.state.likes}</Card.Text>
+              <div  style={{
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+              <Card.Text className='heart' onClick={this.handleClick}>❤️</Card.Text>
+              <Card.Text className='love-counter' onClick={this.handleClick}>{this.state.loves}</Card.Text>
+              </div>
             </div>
             <div style={{ margin: '8px' }}>
               <Card.Text>{this.state.hearts}</Card.Text>

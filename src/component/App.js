@@ -31,6 +31,7 @@ class App extends React.Component {
   render() {
     return (
       <>
+      <html>
         <Header />
         <SelectedBeast
           showModal={this.state.showModal}
@@ -39,6 +40,7 @@ class App extends React.Component {
         />
         <Main setShowModalTrue={this.setShowModalTrue} />
         <Footer />
+        </html>
       </>
     );
   }
