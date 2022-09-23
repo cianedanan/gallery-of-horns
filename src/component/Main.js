@@ -1,6 +1,5 @@
 import React from "react";
 import HornedBeast from "./HornedBeast.js";
-import data from "../assets/data.json";
 import "../css/Main.css";
 
 //row and container used with the help of Mehtab and Maximo

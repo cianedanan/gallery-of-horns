@@ -32,11 +32,11 @@ class App extends React.Component {
     this.setState({ showModal: false });
   };
 
-  handleFormSubmit = (event) =>{
+  handleFormChange = (event) =>{
 		event.preventDefault();
 
     const searchTerm = parseInt(event.target.value);
-    
+
     const searchedBeasts = data.filter(beast => beast.horns === searchTerm);
 
     const testedBeasts = searchedBeasts.length !== 0 ? searchedBeasts : data;
@@ -50,7 +50,7 @@ class App extends React.Component {
       <>
       <html>
         <Header />
-        <FormBeast handleFormSubmit={this.handleFormSubmit}/>
+        <FormBeast handleFormChange={this.handleFormChange}/>
         <SelectedBeast
           showModal={this.state.showModal}
           setShowModalFalse={this.setShowModalFalse}
