@@ -6,6 +6,7 @@ import "../css/Main.css";
 //row and container used with the help of Mehtab and Maximo
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import Col from 'react-bootstrap/Col';
 
 class Main extends React.Component {
 
@@ -14,8 +15,9 @@ class Main extends React.Component {
       <>
         <Container>
           <Row>
-            {data.map((beast) => {
+            {this.props.displayedBeasts.map((beast) => {
               return (
+                <Col>
                 <HornedBeast
 								  setShowModalTrue={this.props.setShowModalTrue}
                   key={beast._id}
@@ -26,6 +28,7 @@ class Main extends React.Component {
                   horns={beast.horns}
                   id={beast._id}
                 />
+                </Col>
               );
             })}
           </Row>
