@@ -35,11 +35,11 @@ class App extends React.Component {
 
     const searchTerm = parseInt(event.target.value);
 
-    const searchedBeasts = data.filter((beast) => beast.horns === searchTerm);
+    let searchedBeasts = data.filter((beast) => beast.horns === searchTerm);
 
-    const testedBeasts = searchedBeasts.length !== 0 ? searchedBeasts : data;
+    searchedBeasts = searchedBeasts.length !== 0 ? searchedBeasts : data;
 
-    this.setState({ displayedBeasts: testedBeasts });
+    this.setState({ displayedBeasts: searchedBeasts });
   };
 
   render() {
